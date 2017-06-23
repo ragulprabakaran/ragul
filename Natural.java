@@ -10,12 +10,17 @@ public class Natural {
 	        System.out.println("Enter Number of items :");
 	        Scanner s = new Scanner(System.in);
 	        x = s.nextInt();
+		 if(x>=0){
 	        while(i <= x)
 	        {
 	            sum = sum +i;
 	            i++;
 	        }
 	        System.out.println("Sum of "+x+" numbers is :"+sum);
+		 }
+		 else{
+			 System.out.println("Enter the valid number");
+		 }
 	    } 
 
 }
